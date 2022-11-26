@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/landing_componenet/nav.svelte';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Nav client:only="svelte" />
+	</main>
+</Layout>
+
+<style>
+</style>
