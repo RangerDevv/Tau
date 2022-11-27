@@ -1,11 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/landing_componenet/nav.svelte';
+import Header from '../components/landing_componenet/header.svelte';
+import Body1 from '../components/landing_componenet/body1.svelte';
+import Card from '../components/landing_componenet/card.svelte';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Tau">
 	<main>
 		<Nav client:only="svelte" />
+		<Header client:only="svelte" />
+		<Body1 client:only="svelte" title={"Memorize faster with flash cards"} Desc={"Memorize faster, and more efficiently with flashcards."}/>
+		<Body1 client:only="svelte" title={"Amgus"} Desc={"sussy"} />
+		<Card client:only="svelte"/>
 	</main>
 </Layout>
 
