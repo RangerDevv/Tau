@@ -1,5 +1,5 @@
 <script>
-import Body1anim from "../images/animations/landing/body1anim.svelte";
+import Body2anim from "../images/animations/landing/b2anim.svelte";
 
 export let title;
 export let Desc;
@@ -13,7 +13,7 @@ export let Desc;
         <p class="sm:text-left text-center text-lg 2xl:text-3xl text-white">{Desc}</p>
     </div>
     <div class="self-center sm:self-end order-1 sm:order-2 flex justify-center sm:justify-end">
-        <Body1anim />
+        <Body2anim />
     </div>
    </div> 
 </main>
