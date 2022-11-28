@@ -28,5 +28,5 @@
     width="{450}"
     controlsLayout="{controlsLayout}"
   />
-  <p class="text-white text-3xl text-center font-extrabold">Sorry, but this page is not available.</p>
+  <p class="text-white text-3xl text-center font-extrabold">Sorry, but this page does not exist.</p>
 </div>
