@@ -5,6 +5,9 @@ import Header from '../components/landing_componenet/header.svelte';
 import Body1 from '../components/landing_componenet/body1.svelte';
 import Body2 from '../components/landing_componenet/body2.svelte';
 import Card from '../components/landing_componenet/card.svelte';
+import Info from '../components/landing_componenet/info.svelte';
+import Calltoaction from '../components/landing_componenet/calltoaction.svelte';
+import Footer from '../components/landing_componenet/footer.svelte';
 ---
 
 <Layout title="Tau">
@@ -14,6 +17,9 @@ import Card from '../components/landing_componenet/card.svelte';
 		<Body1 client:only="svelte" title={"Memorize faster with flash cards"} Desc={"Memorize faster, and more efficiently with flashcards."}/>
 		<Body2 client:only="svelte" title={"Amgus"} Desc={"sussy"} />
 		<Card client:only="svelte"/>
+		<Info client:only="svelte" />
+		<Calltoaction client:only="svelte" />
+		<Footer client:only="svelte" />
 	</main>
 </Layout>
 
