@@ -1,4 +1,6 @@
+<script>
 
+</script>
 
 <div class=" flex justify-center pt-16">
 <div class="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100">
