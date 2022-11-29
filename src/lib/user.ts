@@ -7,7 +7,9 @@ export class User {
         this.password = password
     }
     
-    static register(email: string, password: string, confirmPassword: string) {
+    static register(email: string, password: string, confirmPassword: string): {
+        successful: boolean, message: string
+    } {
         if (password != confirmPassword) {
             return {successful: false, message: "Passwords do not match."}
         }
