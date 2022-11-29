@@ -1,11 +1,11 @@
 
-
+<!-- Login  -->
 <div class=" flex justify-center pt-16">
 <div class="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100">
 	<h2 class="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
 	<p class="text-sm text-center dark:text-gray-400">Dont have account?
 		<a href="#" rel="noopener noreferrer" class="focus:underline hover:underline">Sign up here</a>
-	</p>
+	</p> 
 	<div class="my-6 space-y-4">
 		<button aria-label="Login with Google" type="button" class="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-400 focus:ring-violet-400">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
