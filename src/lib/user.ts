@@ -19,6 +19,8 @@ export class User {
         User.usersList.push(
             User(email, password)
         )
+        
+        return {successful: true, message: ""}
     }
 
     static login(email: string, password: string): {
