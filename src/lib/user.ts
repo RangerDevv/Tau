@@ -5,8 +5,20 @@ export class User {
     constructor(email: string, password: string) {
         this.email = email
         this.password = password
-
-        User.usersList.push(this)
+    }
+    
+    static register(email: string, password: string, confirmPassword: string) {
+        if (password != confirmPassword) {
+            return {successful: false, message: "Passwords do not match."}
+        }
+        
+        if (User.usersList.find(x => x.email == email)) {
+            return {successful: false, message: "A user with that email already exists."}
+        }
+        
+        User.usersList.push(
+            User(email, password)
+        )
     }
 
     static login(email: string, password: string): {
