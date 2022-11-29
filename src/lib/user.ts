@@ -9,15 +9,15 @@ export class User {
         User.usersList.push(this)
     }
 
-    login(email: string, password: string): {
+    static login(email: string, password: string): {
         successful: boolean, message: string
     } {
         let successful = false
         let userExists = false
         for(let user of User.usersList) {
-            if(user.email == this.email) {
+            if(user.email == email) {
                 userExists = true
-                if(user.password == this.password) {
+                if(user.password == password) {
                     successful = true
                 }
                 break
@@ -36,7 +36,7 @@ export class User {
         }
     }
 
-    logout() {
+    static logout() {
         //Do supabase logout here
     }
 
