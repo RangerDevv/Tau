@@ -19,7 +19,7 @@ export class User {
         }
         
         User.usersList.push(
-            User(email, password)
+            new User(email, password)
         )
         
         return {successful: true, message: ""}
