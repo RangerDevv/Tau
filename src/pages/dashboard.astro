@@ -1,0 +1,10 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+import Greeting from "../components/dashboard_component/greeting.svelte";
+
+---
+
+<Layout title="Dashhoard">
+    <Greeting client:only="svelte" />
+</Layout>
