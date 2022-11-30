@@ -2,13 +2,13 @@ export class User {
 
     private static usersList: User[] = []
 
-    constructor(email: string, password: string, name: string) {
+    constructor(email: string, name: string, password: string) {
         this.email = email
         this.password = password
         this.name = name
     }
     
-    static register(email: string, password: string, confirmPassword: string, name: string): {
+    static register(email: string, name: string, password: string, confirmPassword: string): {
         successful: boolean, message: string
     } {
         if (password != confirmPassword) {
@@ -20,7 +20,7 @@ export class User {
         }
         
         User.usersList.push(
-            new User(email, password, name)
+            new User(email, name, password)
         )
         
         return {successful: true, message: ""}
