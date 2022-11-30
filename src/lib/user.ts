@@ -1,6 +1,8 @@
 export class User {
 
     private static usersList: User[] = []
+    
+    public static currentUser: User?
 
     constructor(email: string, name: string, password: string) {
         this.email = email
@@ -19,9 +21,13 @@ export class User {
             return {successful: false, message: "A user with that email already exists."}
         }
         
+        let registered = new User(email, name, password)
+        
         User.usersList.push(
-            new User(email, name, password)
+            registered
         )
+        
+        User.currentUser = registered
         
         return {successful: true, message: ""}
     }
@@ -31,11 +37,13 @@ export class User {
     } {
         let successful = false
         let userExists = false
+        let loggedIn: User?
         for(let user of User.usersList) {
             if(user.email == email) {
                 userExists = true
                 if(user.password == password) {
                     successful = true
+                    loggedIn = user
                 }
                 break
             }
@@ -47,6 +55,8 @@ export class User {
         } else {
             message = "That user does not exist."
         }
+        
+        User.currentUser = loggedIn!
 
         return {
             successful, message
@@ -55,6 +65,7 @@ export class User {
 
     static logout() {
         //Do supabase logout here
+        User.currentUser = undefined
     }
 
     email: string
