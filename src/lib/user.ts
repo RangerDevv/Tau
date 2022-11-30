@@ -2,7 +2,7 @@ export class User {
 
     private static usersList: User[] = []
     
-    public static currentUser: User?
+    public static currentUser: User? = null
 
     constructor(email: string, name: string, password: string) {
         this.email = email
@@ -37,7 +37,7 @@ export class User {
     } {
         let successful = false
         let userExists = false
-        let loggedIn: User?
+        let loggedIn: User? = null
         for(let user of User.usersList) {
             if(user.email == email) {
                 userExists = true
@@ -65,7 +65,7 @@ export class User {
 
     static logout() {
         //Do supabase logout here
-        User.currentUser = undefined
+        User.currentUser = null
     }
 
     email: string
