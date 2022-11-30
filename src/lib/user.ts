@@ -8,7 +8,7 @@ export class User {
         this.name = name
     }
     
-    static register(email: string, password: string, confirmPassword: string, name: string): {
+    static register(email: string, name: string, password: string, confirmPassword: string): {
         successful: boolean, message: string
     } {
         if (password != confirmPassword) {
@@ -59,5 +59,6 @@ export class User {
 
     email: string
     password: string
+    name: string
 
 }
