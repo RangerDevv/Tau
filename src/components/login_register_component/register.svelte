@@ -1,4 +1,13 @@
+<script>
 
+import { User } from "../../lib/user";
+
+user = ''
+
+pw = ''
+
+
+</script>
 
 <div class=" flex justify-center pt-16">
     <div class="w-full max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-900 dark:text-gray-100">
@@ -20,13 +29,13 @@
             <div class="space-y-4">
                 <div class="space-y-2">
                     <label for="email" class="block text-sm">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400">
+                    <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" bind:value={user}>
                 </div>
                 <div class="space-y-2">
                     <div class="flex justify-between">
                         <label for="password" class="text-sm">Password</label>
                     </div>
-                    <input type="password" name="password" id="password" placeholder="*****" class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400">
+                    <input type="password" name="password" id="password" placeholder="*****" class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400" bind:value={Password}>
                 </div>
             </div>
             <button type="button" class="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-400 dark:text-gray-900">Register!</button>

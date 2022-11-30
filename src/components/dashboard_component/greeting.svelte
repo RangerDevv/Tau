@@ -6,6 +6,8 @@ import { User } from "../../lib/user";
 
 <main>
 
-    <p>Hello, {User.login.name}</p>
+    <div class="p-12">
+        <p class="text-white text-2xl font-bold">Hello, Guest!</p>
+    </div>
 
 </main>
