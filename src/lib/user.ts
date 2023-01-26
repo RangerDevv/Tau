@@ -2,7 +2,7 @@ export class User {
 
     private static usersList: User[] = []
     
-    public static currentUser: User? = null
+    public static currentUser: User | null = null
 
     constructor(email: string, name: string, password: string) {
         this.email = email
@@ -37,7 +37,7 @@ export class User {
     } {
         let successful = false
         let userExists = false
-        let loggedIn: User? = null
+        let loggedIn: User | null = null
         for(let user of User.usersList) {
             if(user.email == email) {
                 userExists = true

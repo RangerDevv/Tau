@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Nav from '../components/landing_componenet/nav.svelte';
-import Header from '../components/landing_componenet/header.svelte';
-import Body1 from '../components/landing_componenet/body1.svelte';
-import Body2 from '../components/landing_componenet/body2.svelte';
-import Card from '../components/landing_componenet/card.svelte';
-import Info from '../components/landing_componenet/info.svelte';
-import Calltoaction from '../components/landing_componenet/calltoaction.svelte';
-import Footer from '../components/landing_componenet/footer.svelte';
+import Nav from '../components/landing_componenet/svelte/nav.svelte';
+import Header from '../components/landing_componenet/svelte/header.svelte';
+import Body1 from '../components/landing_componenet/svelte/body1.svelte';
+import Body2 from '../components/landing_componenet/svelte/body2.svelte';
+import Card from '../components/landing_componenet/svelte/card.svelte';
+import Info from '../components/landing_componenet/svelte/info.svelte';
+import Calltoaction from '../components/landing_componenet/svelte/calltoaction.svelte';
+import Footer from '../components/landing_componenet/svelte/footer.svelte';
 ---
 
 <Layout title="Tau">
@@ -22,6 +22,5 @@ import Footer from '../components/landing_componenet/footer.svelte';
 		<Footer client:only="svelte" />
 	</main>
 </Layout>
-
 <style>
 </style>
